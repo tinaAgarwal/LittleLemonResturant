@@ -1,0 +1,54 @@
+
+.hero-section .content {
+    background-color: #495E57;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    place-items: left;
+    text-align: left;
+    margin-bottom: 4rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-row-gap: 10px;
+}
+
+.hero-section .content h1 {
+    font-family: 'Markazi Text';
+    font-style: normal;
+    font-size: 40px;
+    color: #F4CE14;
+    grid-column : 3 / span 3;
+}
+
+.hero-section .content h2 {
+    font-family: 'Markazi Text';
+    font-style: normal;
+    font-size: 18px;
+    color: #EDEFEE;
+    grid-column : 3 / span 3;
+}
+
+.hero-section .content p {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    color: #EDEFEE;
+    grid-column : 3 / span 3;
+    justify-content: space-evenly;
+}
+
+.hero-section .content .btn {
+    grid-column: 3 / span 2;
+}
+
+/*
+.hero-section .content  img {
+    border-radius: 25px;
+    grid-row : 1 / span 4;
+    grid-column: 10 / span 2;
+    width: 350px;
+    height: 370px;
+}
+*/
