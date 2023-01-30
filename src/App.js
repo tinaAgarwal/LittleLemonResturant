@@ -1,10 +1,10 @@
 import './App.css';
-import Nav from "./Components/navbar/Nav";
-import Main from "./Components/Main";
-import Footer from "./Components/Footer";
 import React from "react";
+import Nav from "./Components/navbar/Nav";
 import Hero from './Components/hero/Hero';
 import Highlights from './Components/highlights/Highlights';
+import Footer from './Components/footer/Footer';
+import About from './Components/about/About';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Nav />
       <Hero />
       <Highlights />
-      <Main  />
+      <About />
       <Footer />
     </>
   );

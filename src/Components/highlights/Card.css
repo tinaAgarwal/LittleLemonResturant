@@ -1,0 +1,70 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+    width: 18rem;
+}
+
+.card .card-photo {
+    overflow: hidden;
+    width: 100%;
+}
+
+.card .card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding: 15px;
+    flex: 1;
+}
+
+.card .card_content h1 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-size: 20px;
+    color: #333333;
+}
+
+.card .card_content h2 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-size: 20px;
+    color: #333333;
+}
+
+.card .card_content p {
+    font-family: 'Karla';
+    font-size: 18px;
+    color: #333333;
+}
+
+.card .card_content .btn {
+    display: flex;
+    font-family: 'Karla';
+    font-style: normal;
+    font-size: 20px;
+    color: #333333;
+}
+
+.card .card_content .btn .icon{
+    align-self: flex-end;
+}
+
+@media screen and (max-width:940px) {
+    .card .card_content h1 {
+        font-size: 1.5rem;
+    }
+
+    .card .card_content h2 {
+        font-size: 1rem;
+    }
+
+    .card .card_content p {
+        font-size: 1rem;
+    }
+    
+    .card .card_content .btn {
+        font-size: 1rem;
+    }
+}
