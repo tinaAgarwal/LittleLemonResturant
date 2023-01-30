@@ -1,0 +1,44 @@
+.highlights .highlights-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 4rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.highlights .highlights-content h1 {
+    font-family: 'Markazi Text';
+    font-size: 40px;
+    color: #333333;
+    grid-column : 3 / span 3;
+}
+
+.highlights .highlights-content .btn {
+    grid-column: 10 / span 1;
+}
+
+.highlights .card-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:940px) {
+    .highlights{
+        margin: 1rem 0;
+    }
+
+    .highlights .highlights-content h1 {
+        font-family: 'Markazi Text';
+        font-size: 1.5rem;
+        color: #333333;
+        margin: 1rem;
+    }
+
+    .highlights .card-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        grid-gap: 0.5rem;
+    }
+}

@@ -18,7 +18,7 @@ function Nav () {
     return (
         <div className="navbar">
             <div className='container'>
-                <header>
+                <header className='header'>
                     <img src={url} alt="Little Lemon Logo"></img>
                 </header>
                 <nav>

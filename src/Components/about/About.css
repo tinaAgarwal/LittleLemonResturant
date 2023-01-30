@@ -1,15 +1,14 @@
-.hero-section  {
-    background-color: #495E57;
-    height: 100%;
+.about{
     width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin-bottom: 4rem;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 20px
 }
 
-.hero-section .content{
+.about .content{
     grid-column : 3 / span 3;
     display: flex;
     flex-direction: column;
@@ -17,33 +16,30 @@
     gap: 10px;
 }
 
-.hero-section .content h1 {
+.about .content h1 {
     font-family: 'Markazi Text';
     font-style: normal;
     font-size: 40px;
     color: #F4CE14;
 }
 
-.hero-section .content h2 {
+.about .content h2 {
     font-family: 'Markazi Text';
     font-style: normal;
     font-size: 18px;
-    color: #EDEFEE;
+    color: #495E57;
 }
 
-.hero-section .content p {
+.about .content p {
     font-family: 'Karla';
     font-style: normal;
     font-weight: 800;
     font-size: 13px;
-    color: #EDEFEE;
+    color: #495E57;
 }
 
-.hero-section .content .btn {
-    margin: 1rem;
-}
 
-.hero-section .image {
-    grid-column: 10 / span 2;
-    border-radius: 25px;
+.about .image {
+    grid-column: 8/ span 2;
+    display: flex;
 }

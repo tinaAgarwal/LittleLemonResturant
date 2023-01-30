@@ -13,6 +13,9 @@ const Hero = () => {
                     Reserve a Table
                 </button>
             </div>
+            <div className='image'>
+                <img src={url} height="250px" width="200px"></img>
+            </div>
         </div>
     );
 }
