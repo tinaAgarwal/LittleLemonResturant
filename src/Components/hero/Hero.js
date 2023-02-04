@@ -1,6 +1,8 @@
 import React from 'react';
 import url from "../assets/restauranfood.jpg";
+import ReservationPage from '../reservation/ReservationPage';
 import './Hero.css';
+import { Route, Routes, Link } from 'react-router-dom';
 
 const Hero = () => {
     return(
