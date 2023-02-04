@@ -6,7 +6,7 @@
     background-color: #fff;
 }
 
-.navbar .container{
+.navbar .nav-container{
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -18,14 +18,16 @@
     display: flex;
 }
 
+/*
 .navbar li {
     padding: 1rem;
 }
-
-.navbar li a {
+*/
+.nav-item {
     font-family: 'Karla';
     font-style: normal;
     color: #333333;
+    padding: 1rem;
 }
 
 .hamburger {
@@ -59,7 +61,7 @@
         right: 0;
     }
 
-    .navbar .nav-menu li a {
+    .navbar .nav-menu .nav-item {
         font-size: 2rem;
     }
 }
