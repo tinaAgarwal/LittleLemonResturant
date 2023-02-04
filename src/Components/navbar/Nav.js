@@ -8,7 +8,7 @@ import {HiOutlineMenuAlt4} from 'react-icons/hi';
 import {FaRegTimesCircle} from 'react-icons/fa';
 
 import Menu from '../menu/Menu';
-import Reservation from '../reservation/Reservation';
+import ReservationPage from '../reservation/ReservationPage';
 import Order from '../order/Order';
 import Login from '../login/Login';
 import AboutPage from '../about/AboutPage';
@@ -45,7 +45,7 @@ function Nav () {
                     <Route path="/home" element={<Home />} />
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/menu" element={<Menu />} />
-                    <Route path="/reservation" element={<Reservation />} />
+                    <Route path="/reservation" element={<ReservationPage />} />
                     <Route path="/order-online" element={<Order />} />
                     <Route path="/login" element={<Login />} />
                 </Routes>
