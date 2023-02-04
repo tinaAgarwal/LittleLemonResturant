@@ -1,12 +1,18 @@
 import './Nav.css';
 import React, {useState} from 'react';
 import url from "../assets/Logo.svg";
+import { Route, Routes, Link } from 'react-router-dom';
 
 /*mobile */
 import {HiOutlineMenuAlt4} from 'react-icons/hi';
 import {FaRegTimesCircle} from 'react-icons/fa';
-import {BsFillHouseFill} from 'react-icons/bs';
 
+import Menu from '../menu/Menu';
+import Reservation from '../reservation/Reservation';
+import Order from '../order/Order';
+import Login from '../login/Login';
+import AboutPage from '../about/AboutPage';
+import Home from '../home/Home';
 
 function Nav () {
     const [click, setClick] = useState(false);
@@ -17,24 +23,32 @@ function Nav () {
 
     return (
         <div className="navbar">
-            <div className='container'>
+            <div className='nav-container'>
                 <header className='header'>
                     <img src={url} alt="Little Lemon Logo"></img>
                 </header>
                 <nav>
                     <ul className={click ? 'nav-menu active': 'nav-menu'}>
-                        <li><a href='#'>Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Reservation</a></li>
-                        <li><a href="#">Order Online</a></li>
-                        <li><a href="#">Login</a></li>
+                        <Link to="/home" className='nav-item'>Home</Link>
+                        <Link to="/about" className='nav-item'>About</Link>
+                        <Link to="/menu" className='nav-item'>Menu</Link>
+                        <Link to="/reservation" className='nav-item'>Reservation</Link>
+                        <Link to="/order-online" className='nav-item'>Order Online</Link>
+                        <Link to="/login" className='nav-item'>Login</Link>
                     </ul>
                     <div className='hamburger' onClick={handleClick} >
-                        {click ? <FaRegTimesCircle className='icon' /> : 
+                        {click ? <FaRegTimesCircle className='icon' /> :
                         <HiOutlineMenuAlt4 className='icon' /> }
                     </div>
                 </nav>
+                <Routes>
+                    <Route path="/home" element={<Home />} />
+                    <Route path="/about" element={<AboutPage />} />
+                    <Route path="/menu" element={<Menu />} />
+                    <Route path="/reservation" element={<Reservation />} />
+                    <Route path="/order-online" element={<Order />} />
+                    <Route path="/login" element={<Login />} />
+                </Routes>
             </div>
         </div>
     );
