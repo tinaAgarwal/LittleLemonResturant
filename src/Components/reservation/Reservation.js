@@ -2,18 +2,18 @@ import './Reservation.css';
 import { useState } from 'react';
 
 function Reservation({state, dispatch}) {
-
+    const date = new Date();
     const [formVal, setFormVal] = useState({});
+
     const handleSubmit = (e) => {
         e.preventDefault();
         alert("Reservation made successfully! ");
-        setFormVal({date: new Date(),
+        setFormVal({
+            date: new Date(),
             time: "",
             noOfGuest: 1,
             occasion: ""
         });
-        let availableTimesBe = state.availableTimes.filter( time => time !== e.target.time);
-        state.setAvailableTimes(availableTimesBe);
     }
 
     const handleChange = (e) => {
@@ -30,7 +30,7 @@ function Reservation({state, dispatch}) {
                         <label htmlFor="res-date">Choose date</label>
                     </div>
                     <div className='reservation-items'>
-                        <input type="date" id="res-date" onChange={(event)=> dispatch({type:"date", payload: event.target.value}) } value={formVal.date}   />
+                        <input type="date" id="res-date" onChange={(event)=> {dispatch({type:"date", key: "date" , payload: event.target.value})} } value={formVal.date}   />
                     </div>
                     <div className='reservation-items'>
                         <label htmlFor="res-time">Choose time</label>
@@ -53,8 +53,8 @@ function Reservation({state, dispatch}) {
                     </div>
                     <div className='reservation-items'>
                         <select id="occasion" onChange={handleChange} value={formVal.occasion} >
-                            <option>Birthday</option>
-                            <option>Anniversary</option>
+                            <option value="Birthday">Birthday</option>
+                            <option value="Anniversary">Anniversary</option>
                         </select>
                     </div>
                 </div>
