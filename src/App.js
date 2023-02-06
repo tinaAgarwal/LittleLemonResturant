@@ -25,7 +25,7 @@ const initializeTimes = (availableTime) => {
 const updateTimes = (state, action) => {
   if(action.type === "date") {
      console.log("Action.payload - updateTime=" + action.payload);
-     var date = new Date(action.payload); 
+     var date = new Date(action.payload);
      console.log("date=" + date);
      return { ...state, availableTimes: fetchAPI(date) }
   }
