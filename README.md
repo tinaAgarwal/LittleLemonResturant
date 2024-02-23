@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-# little-lemon
-Little lemon resturant
+# Little Lemon Resturant
+Little lemon resturant is a react app 
 
 ![image](https://github.com/tinaAgarwal/little-lemon/assets/8646266/7a65d3f7-ec98-43d2-87d0-dc24c69751d1)
 ![image](https://github.com/tinaAgarwal/little-lemon/assets/8646266/3b12826d-09df-4b77-bf16-8deba5487916)
