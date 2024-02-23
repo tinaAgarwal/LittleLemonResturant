@@ -1,6 +1,12 @@
 <<<<<<< HEAD
 # little-lemon
 Little lemon resturant
+
+![image](https://github.com/tinaAgarwal/little-lemon/assets/8646266/7a65d3f7-ec98-43d2-87d0-dc24c69751d1)
+![image](https://github.com/tinaAgarwal/little-lemon/assets/8646266/3b12826d-09df-4b77-bf16-8deba5487916)
+![image](https://github.com/tinaAgarwal/little-lemon/assets/8646266/80a1df1a-fcaa-4568-8e9a-40ed9a91984e)
+
+
 =======
 # Getting Started with Create React App
 
